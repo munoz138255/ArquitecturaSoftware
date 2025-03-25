@@ -1,30 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.panelcontroljava.Ronda;
+package modelo;
 
-import com.mycompany.panelcontroljava.Ejercicio.Ejercicio;
-import com.mycompany.panelcontroljava.Jugador.Jugador;
-
-/**
- *
- * @author byval
- */
 public class Ronda {
     private final int id;
     private Jugador dibujante;
     private Jugador recreador;
-    private Ejercicio ejercicio;
+    private Reto reto;
     private String fotoRecreacion;
     private int puntuacion;
 
-    public Ronda(int id, Jugador dibujante, Jugador recreador, Ejercicio ejercicio) {
+    public Ronda(int id, Jugador dibujante, Jugador recreador, Reto reto) {
         this.id = id;
         this.dibujante = dibujante;
         this.recreador = recreador;
-        this.ejercicio = ejercicio;
-        this.puntuacion = 0; // Se asigna tras evaluación
+        this.reto = reto;
+        this.puntuacion = 0;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public Jugador getDibujante() {
@@ -43,12 +36,12 @@ public class Ronda {
         this.recreador = recreador;
     }
 
-    public Ejercicio getEjercicio() {
-        return ejercicio;
+    public Reto getReto() {
+        return reto;
     }
 
-    public void setEjercicio(Ejercicio ejercicio) {
-        this.ejercicio = ejercicio;
+    public void setReto(Reto reto) {
+        this.reto = reto;
     }
 
     public String getFotoRecreacion() {
@@ -66,7 +59,4 @@ public class Ronda {
     public void setPuntuacion(int puntuacion) {
         this.puntuacion = puntuacion;
     }
-
-    
 }
-

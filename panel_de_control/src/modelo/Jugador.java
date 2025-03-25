@@ -1,23 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.panelcontroljava.Jugador;
+package modelo;
 
-/**
- *
- * @author byval
- */
 public class Jugador {
-    public String nombre;
-    public float puntuacion;
+    private String nombre;
+    private float puntuacion;
 
     public Jugador(String nombre) {
         this.nombre = nombre;
-        this.puntuacion = puntuacion;
+        this.puntuacion = 0;
     }
-    
-    
 
     public String getNombre() {
         return nombre;
@@ -37,8 +27,6 @@ public class Jugador {
 
     @Override
     public String toString() {
-        return nombre;
+        return nombre + " (Puntuación: " + puntuacion + ")";
     }
-    
-    
 }
