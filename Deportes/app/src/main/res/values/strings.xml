@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Deportes</string>
+    <string name="edit_Jugador1"> </string>
+    <string name="edit_Jugador2"> </string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_borrar">Borrar Partida</string>
+    <string name="button_return">Crear Partida</string>
+
+</resources>
